@@ -129,3 +129,13 @@ iframe::-webkit-scrollbar {
     height: 130px;
   }
 }
+
+@media (max-width: 379px) {
+  #about-skills {
+    font-size: 10px;
+    height: 8rem;
+    padding: 10px;
+    justify-self: center;
+    
+  }
+}

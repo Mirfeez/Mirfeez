@@ -5,7 +5,8 @@ const About = () => {
 	return (
 		<section id="aboutText" className="px-6 py-16 max-w-6xl mx-auto">
 			{/* Title */}
-			<motion.h1 id="abouth1"
+			<motion.h1
+				id="abouth1"
 				initial={{ opacity: 0, y: -30 }}
 				animate={{ opacity: 1, y: 0 }}
 				className="text-3xl md:text-4xl font-bold text-white mb-12 text-center max-sm:text-sm "
@@ -25,8 +26,8 @@ const About = () => {
 						initial={{ opacity: 0, x: -30 }}
 						animate={{ opacity: 1, x: 0 }}
 						transition={{
-							delay:0.3,
-							duration:0.5
+							delay: 0.3,
+							duration: 0.5,
 						}}
 						className="text-zinc-400 space-y-4 w-[60%]"
 					>
@@ -55,19 +56,20 @@ const About = () => {
 
 						{/* Buttons */}
 						<motion.div
-						initial={{
-							x:50,
-							opacity:0
-						}}
-						animate={{
-							x:0,
-							opacity:1
-						}}
-						transition={{
-							delay:0.5,
-							duration:0.5
-						}}
-						 className="flex gap-4 mt-4">
+							initial={{
+								x: 50,
+								opacity: 0,
+							}}
+							animate={{
+								x: 0,
+								opacity: 1,
+							}}
+							transition={{
+								delay: 0.5,
+								duration: 0.5,
+							}}
+							className="flex gap-4 mt-4"
+						>
 							<a
 								target="_blank"
 								href="../pdf/resume.pdf"
@@ -95,7 +97,7 @@ const About = () => {
 							id="aboutimg"
 							whileHover={{
 								scale: 1.03,
-								boxShadow:"0 0 20px skyblue"
+								boxShadow: "0 0 20px skyblue",
 							}}
 							initial={{ y: -200, opacity: 0 }}
 							animate={{ y: 0, opacity: 1 }}
@@ -123,26 +125,31 @@ const About = () => {
 						{ label: "Frontend Developer", value: "Designation" },
 					].map((item) => (
 						<motion.div
-						initial={{
-							x:30,
-							opacity:0
-						}}
-						animate={{
-							x:0,
-							opacity:1
-						}}
-						transition={{
-							delay:0.3,
-							duration:0.5
-						}}
+							initial={{
+								x: 30,
+								opacity: 0,
+							}}
+							animate={{
+								x: 0,
+								opacity: 1,
+							}}
+							transition={{
+								delay: 0.3,
+								duration: 0.5,
+							}}
 							id="about-status"
 							key={item.label}
 							className="bg-zinc-900 border border-zinc-700 rounded-xl p-6 text-center items"
 						>
-							<h3 id="about-status-head" className="text-2xl font-bold text-white">
+							<h3
+								id="about-status-head"
+								className="text-2xl font-bold text-white"
+							>
 								{item.value}
 							</h3>
-							<p id="about-status-p" className="text-zinc-400 text-sm">{item.label}</p>
+							<p id="about-status-p" className="text-zinc-400 text-sm">
+								{item.label}
+							</p>
 						</motion.div>
 					))}
 				</motion.div>
@@ -152,14 +159,32 @@ const About = () => {
 
 			{/* Skills */}
 			<motion.div
-			id="about-skills"
-				initial={{ opacity: 0, y: 20 }}
+				id="about-skills"
+				initial={{ opacity: 0, y: -20 }}
 				animate={{ opacity: 1, y: 0 }}
+				transition={{
+					delay: 0.3,
+					duration: 0.5,
+				}}
 				className="bg-zinc-900 border border-zinc-700 p-6 rounded-2xl mb-12"
 			>
 				<h2 className="text-xl font-semibold text-white mb-4">Skills</h2>
 
-				<div className="flex flex-wrap gap-3">
+				<motion.div
+					initial={{
+						y: 20,
+						opacity: 0,
+					}}
+					animate={{
+						y: 0,
+						opacity: 1,
+					}}
+					transition={{
+						delay: 0.5,
+						duration: 0.5,
+					}}
+					className="flex flex-wrap gap-3"
+				>
 					{[
 						"HTML",
 						"CSS",
@@ -173,14 +198,15 @@ const About = () => {
 						"Canva",
 						"Design",
 					].map((skill) => (
-						<span id="about-skills-text"
+						<span
+							id="about-skills-text"
 							key={skill}
 							className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm"
 						>
 							{skill}
 						</span>
 					))}
-				</div>
+				</motion.div>
 			</motion.div>
 
 			{/* Bottom CTA */}
