@@ -7,11 +7,125 @@
 
 
 
-body{
+body {
   background-color: rgb(21, 21, 21);
   color: white;
 }
 
 iframe::-webkit-scrollbar {
   display: none;
+}
+
+
+/* responsive  */
+@media (max-width: 768px) {
+  #aboutimg {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  #aboutText {
+    font-size: x-small;
+  }
+
+  #about-name {
+    font-size: small;
+  }
+
+  #aboutimg {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 450px) {
+  #aboutText{
+    padding-top: 0;
+  }
+  #abouth1{
+    margin: 10px;
+  }
+  
+  #about-topleft {
+    flex-direction: column-reverse;
+    align-items: start;
+    width: 40vw;
+  }
+
+  #about-topandmid {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .items {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  #about-lefttext {
+    width: 90vw;
+    padding-right: 2.5rem;
+  }
+
+  #about-img-wrapper {
+    justify-content: center;
+    display: flex;
+  }
+
+  #about-mid {
+    width: 150px;
+    height: 150px;
+    gap: -1rem;
+    margin-top: 0.5rem;
+  }
+  
+  #about-status {
+    width: 20vw;
+    height: 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about-status-head {
+    font-size: smaller;
+    justify-self: center;
+    align-items: center;
+  }
+
+  #about-status-p {
+    font-size: 6px;
+    justify-self: center;
+    align-items: center;
+  }
+
+  #about-skills {
+    height: 7rem;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  #about-skills h2 {
+    font-size: 14px;
+    margin: 2px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+  }
+  #about-skills div{
+    gap: 6px;
+  }
+
+  #about-skills-text {
+    font-size: 8px;
+  }
+
+  #aboutimg{
+    width: 130px;
+    height: 130px;
+  }
 }
