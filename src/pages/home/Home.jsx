@@ -35,11 +35,12 @@ const Home = () => {
 					{/* Web Dev */}
 					<div className="bg-[#111827] p-5 md:p-6 rounded-xl hover:shadow-lg hover:shadow-blue-500/10 transition">
 						<h3 className="text-lg md:text-xl font-semibold text-blue-400 mb-3">
-							💻 Web Development
+							💻 Full Stack Development
 						</h3>
 						<p className="text-gray-400 text-sm md:text-base">
-							I create modern, responsive websites using React and
-							Tailwind CSS with clean UI and smooth user experience.
+							I create modern, responsive MERN Stack websites with
+							amazing creative gsap & framer-motion animations with Fine
+							UI/UX Designs with creative Dashboards for Admin/User.
 						</p>
 					</div>
 
@@ -124,7 +125,10 @@ const Home = () => {
 					Have an idea, need a website, or want a custom dashboard?
 				</p>
 
-				<Link to='/contact' className="px-5 md:px-6 py-2.5 md:py-3 bg-blue-400 text-black rounded-lg hover:bg-blue-500 transition">
+				<Link
+					to="/contact"
+					className="px-5 md:px-6 py-2.5 md:py-3 bg-blue-400 text-black rounded-lg hover:bg-blue-500 transition"
+				>
 					Contact Me
 				</Link>
 			</section>

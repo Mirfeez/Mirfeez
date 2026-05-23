@@ -42,7 +42,7 @@ const LeftSide = () => {
 					}}
 					className="text-xl md:text-2xl mb-4 text-gray-400"
 				>
-					Frontend Developer, Digital Product & Advanced Excel Dashboard
+					Full Stack Developer, Digital Product & Advanced Excel Dashboard
 					Creator
 				</motion.h2>
 
