@@ -1,5 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
+import Skills from "./Skills";
 
 const About = () => {
 	return (
@@ -8,7 +10,8 @@ const About = () => {
 			<motion.h1
 				id="abouth1"
 				initial={{ opacity: 0, y: -30 }}
-				animate={{ opacity: 1, y: 0 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true }}
 				className="text-3xl md:text-4xl font-bold text-white mb-12 text-center max-sm:text-sm "
 			>
 				About Me
@@ -24,11 +27,12 @@ const About = () => {
 					<motion.div
 						id="about-lefttext"
 						initial={{ opacity: 0, x: -30 }}
-						animate={{ opacity: 1, x: 0 }}
+						whileInView={{ opacity: 1, x: 0 }}
 						transition={{
 							delay: 0.3,
 							duration: 0.5,
 						}}
+						viewport={{ once: true }}
 						className="text-zinc-400 space-y-4 w-[60%]"
 					>
 						<p>
@@ -60,10 +64,11 @@ const About = () => {
 								x: 50,
 								opacity: 0,
 							}}
-							animate={{
+							whileInView={{
 								x: 0,
 								opacity: 1,
 							}}
+							viewport={{ once: true }}
 							transition={{
 								delay: 0.5,
 								duration: 0.5,
@@ -91,7 +96,8 @@ const About = () => {
 					<motion.div
 						id="about-img-wrapper"
 						initial={{ opacity: 0, x: 30 }}
-						animate={{ opacity: 1, x: 0 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						viewport={{ once: true }}
 					>
 						<motion.img
 							id="aboutimg"
@@ -100,12 +106,13 @@ const About = () => {
 								boxShadow: "0 0 20px skyblue",
 							}}
 							initial={{ y: -200, opacity: 0 }}
-							animate={{ y: 0, opacity: 1 }}
+							whileInView={{ y: 0, opacity: 1 }}
 							transition={{
 								type: "spring",
 								stiffness: 120,
 								damping: 6, // lower = more bounce
 							}}
+							viewport={{ once: true }}
 							src="../pics/coat pic.jpg"
 							alt=""
 							className="w-60 h-60 md:w-60 md:h-60 rounded-full object-cover flex justify-self-center"
@@ -115,24 +122,26 @@ const About = () => {
 				<motion.div
 					id="about-mid"
 					initial={{ opacity: 0, y: 20 }}
-					animate={{ opacity: 1, y: 0 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: true }}
 					className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
 				>
 					{[
 						{ label: "Projects", value: "7+" },
 						{ label: "Skills", value: "8+" },
 						{ label: "Freelancer ", value: "Status" },
-						{ label: "Frontend Developer", value: "Designation" },
+						{ label: "Full Stack Developer", value: "Role" },
 					].map((item) => (
 						<motion.div
 							initial={{
 								x: 30,
 								opacity: 0,
 							}}
-							animate={{
+							whileInView={{
 								x: 0,
 								opacity: 1,
 							}}
+							viewport={{ once: true }}
 							transition={{
 								delay: 0.3,
 								duration: 0.5,
@@ -157,62 +166,15 @@ const About = () => {
 
 			{/* Stats */}
 
-			{/* Skills */}
-			<motion.div
-				id="about-skills"
-				initial={{ opacity: 0, y: -20 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{
-					delay: 0.3,
-					duration: 0.5,
-				}}
-				className="bg-zinc-900 border border-zinc-700 p-6 rounded-2xl mb-12"
-			>
-				<h2 className="text-xl font-semibold text-white mb-4">Skills</h2>
-
-				<motion.div
-					initial={{
-						y: 20,
-						opacity: 0,
-					}}
-					animate={{
-						y: 0,
-						opacity: 1,
-					}}
-					transition={{
-						delay: 0.5,
-						duration: 0.5,
-					}}
-					className="flex flex-wrap gap-3"
-				>
-					{[
-						"HTML",
-						"CSS",
-						"JavaScript",
-						"React",
-						"Tailwind",
-						"GSAP",
-						"Motion",
-						"Node.js",
-						"Excel",
-						"Canva",
-						"Design",
-					].map((skill) => (
-						<span
-							id="about-skills-text"
-							key={skill}
-							className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm"
-						>
-							{skill}
-						</span>
-					))}
-				</motion.div>
-			</motion.div>
+			<div>
+				<Skills />
+			</div>
 
 			{/* Bottom CTA */}
 			<motion.div
 				initial={{ opacity: 0, y: 20 }}
-				animate={{ opacity: 1, y: 0 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true }}
 				className="text-center"
 			>
 				<p className="text-zinc-400 mb-10">

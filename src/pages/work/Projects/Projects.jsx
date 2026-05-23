@@ -117,8 +117,8 @@ const Projects = () => {
 				<div key={category} className="mb-20">
 					{/* Category Heading */}
 					<motion.h2
-						initial={{ opacity: 0, x: -40 }}
-						whileInView={{ opacity: 1, x: 0 }}
+						initial={{ opacity: 0, y: -40 }}
+						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.5 }}
 						viewport={{ once: true }}
 						className="
@@ -148,8 +148,8 @@ const Projects = () => {
 						{projects.map((project, idx) => (
 							<motion.div
 								key={idx}
-								initial={{ opacity: 0, x: 40 }}
-								whileInView={{ opacity: 1, x: 0 }}
+								initial={{ opacity: 0, y: 40 }}
+								whileInView={{ opacity: 1, y: 0 }}
 								transition={{ duration: 0.2 }}
 								viewport={{ once: true }}
 								whileHover={{

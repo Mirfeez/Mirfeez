@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/home/Home";
-import About from "./pages/About";
+import About from "./pages/About/About";
 import Contact from "./pages/Contact";
 import Notfound from "./pages/Notfound";
 import Footer from "./components/Footer";
