@@ -68,40 +68,6 @@ const Home = () => {
 				</div>
 			</section>
 
-			{/* SERVICES */}
-			<section className="py-16 md:py-20 px-6 max-w-5xl mx-auto text-center">
-				<h2 className="text-2xl md:text-3xl font-bold mb-8 md:mb-10 text-white">
-					Services
-				</h2>
-
-				<div className="space-y-5 md:space-y-6 text-gray-400 text-sm md:text-base">
-					<p>
-						<span className="text-blue-400 font-semibold">
-							Website Development:
-						</span>{" "}
-						Custom responsive websites with modern UI.
-					</p>
-
-					<p>
-						<span className="text-blue-400 font-semibold">
-							Dashboard Creation:
-						</span>{" "}
-						Advanced tracking systems with analytics and custom features.
-					</p>
-
-					<p>
-						<span className="text-blue-400 font-semibold">
-							Business Design:
-						</span>{" "}
-						Brochures, business cards, and invitation designs.
-					</p>
-
-					<p className="text-blue-400">
-						Custom solutions available based on your needs.
-					</p>
-				</div>
-			</section>
-
 			{/* WHY ME */}
 			<section className="py-16 md:py-20 px-6 bg-[#111827] text-center">
 				<h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-white">
