@@ -1,5 +1,6 @@
 import { FaLocationDot, FaSquarePhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -48,18 +49,18 @@ const Footer = () => {
 				{/* Center */}
 				<div className="flex flex-col gap-2">
 					<h2 className="text-white font-semibold mb-2">Quick Links</h2>
-					<a href="/" className="hover:text-blue-400">
+					<Link to="/" className="hover:text-blue-400">
 						Home
-					</a>
-					<a href="/Works" className="hover:text-blue-400">
+					</Link>
+					<Link	to="/works" className="hover:text-blue-400">
 						Works
-					</a>
-					<a href="/about" className="hover:text-blue-400">
+					</Link>
+					<Link to="/about" className="hover:text-blue-400">
 						About
-					</a>
-					<a href="/contact" className="hover:text-blue-400">
+					</Link>
+					<Link to="/contact" className="hover:text-blue-400">
 						Contact
-					</a>
+					</Link>
 				</div>
 			</div>
 

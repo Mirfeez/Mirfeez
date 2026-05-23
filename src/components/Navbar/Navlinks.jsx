@@ -17,9 +17,7 @@ const Navlinks = () => {
 	];
 	return (
 		<>
-			<motion.nav
-				className="hidden md:flex gap-4 font-medium"
-			>
+			<motion.nav className="hidden md:flex gap-4 font-medium">
 				{navLinks.map((link, i) => (
 					<NavLink key={i} to={link.path} className={navClass}>
 						{link.name}

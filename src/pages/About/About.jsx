@@ -101,10 +101,6 @@ const About = () => {
 					>
 						<motion.img
 							id="aboutimg"
-							whileHover={{
-								scale: 1.03,
-								boxShadow: "0 0 20px skyblue",
-							}}
 							initial={{ y: -200, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1 }}
 							transition={{
