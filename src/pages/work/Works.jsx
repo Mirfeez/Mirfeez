@@ -1,6 +1,6 @@
 import React from "react";
 import Services from './Services/Services';
-import Projects from './Projects';
+import Projects from './Projects/Projects';
 
 const Works = () => {
    return (
