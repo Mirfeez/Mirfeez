@@ -1,9 +1,9 @@
 import React from "react";
 
 
-const ServiceCard = ({ icon, title, desc }) => {
+const ServiceCard = () => {
 	return (
-		
+null
 	);
 };
 
