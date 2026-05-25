@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 
 const NotFound = () => {
 	const location = useLocation();
@@ -19,7 +19,7 @@ const NotFound = () => {
 				overflow-hidden
 			"
 		>
-			<motion.div
+			<Motion.div
 				initial={{ opacity: 0, scale: 0 }}
 				animate={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 1 }}
@@ -31,7 +31,7 @@ const NotFound = () => {
 				"
 			>
 				{/* 404 */}
-				<motion.h1
+				<Motion.h1
 					initial={{ y: -50 }}
 					animate={{ y: 0 }}
 					transition={{
@@ -51,10 +51,10 @@ const NotFound = () => {
 					"
 				>
 					404
-				</motion.h1>
+				</Motion.h1>
 
 				{/* Meme Image */}
-				<motion.img
+				<Motion.img
 					src="https://images.openai.com/static-rsc-4/_NL7vV7qMsVjNIc9s1RzQrEKIZdv3jQJ5y-hYptIV2b0P92eUCbbG6Z3g0IrNhxhkkEkrCLG0akzf1AKbTSWooKfjhNTyoOcbnQfu_dT4Y_60Qg9vcCf78xV2TnbeudZwsXGTz7u01lftS3dK0l-aaqDfTfpx7bvbieCk6az0RE?purpose=inline"
 					alt="404 meme"
 					initial={{ opacity: 0, y: 30 }}
@@ -84,7 +84,7 @@ const NotFound = () => {
 				/>
 
 				{/* Funny Text */}
-				<motion.h2
+				<Motion.h2
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.3 }}
@@ -99,10 +99,10 @@ const NotFound = () => {
 					"
 				>
 					SORRY
-				</motion.h2>
+				</Motion.h2>
 
 				{/* Route Label */}
-				<motion.p
+				<Motion.p
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.5 }}
@@ -117,7 +117,7 @@ const NotFound = () => {
 					"
 				>
 					No page for:
-				</motion.p>
+				</Motion.p>
 
 				{/* Route */}
 				<p
@@ -136,7 +136,7 @@ const NotFound = () => {
 				</p>
 
 				{/* Button */}
-				<motion.div
+				<Motion.div
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 0.7 }}
@@ -165,8 +165,8 @@ const NotFound = () => {
 					>
 						Return Home
 					</Link>
-				</motion.div>
-			</motion.div>
+				</Motion.div>
+			</Motion.div>
 		</section>
 	);
 };

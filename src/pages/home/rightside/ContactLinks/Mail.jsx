@@ -1,10 +1,10 @@
 import { IoIosMail } from "react-icons/io";
-import { motion } from "motion/react";
+import { motion as Motion } from "motion/react";
 
 
 const Mail = () => {
 	return (
-		<motion.div
+		<Motion.div
 			whileHover={{
 				scale: 1.3,
 				boxShadow: "0 0 10px 5px rgba(59, 130, 246, 0.4)",
@@ -19,7 +19,7 @@ const Mail = () => {
 			>
 				<IoIosMail />
 			</a>
-		</motion.div>
+		</Motion.div>
 	);
 };
 

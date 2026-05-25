@@ -1,9 +1,9 @@
 import { FaGithub } from "react-icons/fa";
-import { motion } from "motion/react";
+import { motion as Motion } from "motion/react";
 
 const Github = () => {
 	return (
-		<motion.div
+		<Motion.div
 			whileHover={{
 				boxShadow: "0 0 10px 5px rgba(59, 130, 246, 0.4)",
 				scale: 1.3,
@@ -15,7 +15,7 @@ const Github = () => {
 			<a target="_blank" href="https://github.com/Mirfeez">
 				<FaGithub />
 			</a>
-		</motion.div>
+		</Motion.div>
 	);
 };
 

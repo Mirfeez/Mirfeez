@@ -1,8 +1,8 @@
-import { motion } from "motion/react";
+import { motion as Motion } from "motion/react";
 
 const ServiceCard = ({ icon, title, desc }) => {
 	return (
-		<motion.div
+		<Motion.div
 			whileHover={{
 				y: -8,
 				scale: 1.03,
@@ -27,7 +27,7 @@ const ServiceCard = ({ icon, title, desc }) => {
 			<h3 className="font-bold md:text-xl text-blue-400">{title}</h3>
 
 			<p className="text-sm text-zinc-400">{desc}</p>
-		</motion.div>
+		</Motion.div>
 	);
 };
 

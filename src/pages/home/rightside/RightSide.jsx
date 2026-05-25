@@ -3,7 +3,7 @@ import Linkedin from "./ContactLinks/Linkedin";
 import Whatsapp from "./ContactLinks/Whatsapp";
 import Phone from "./ContactLinks/Phone";
 import Contact from "./../../Contact";
-import { easeIn, easeInOut, motion } from "motion/react";
+import { motion as Motion } from "motion/react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { FaArrowAltCircleDown } from "react-icons/fa";
@@ -41,7 +41,7 @@ const RightSide = () => {
 			className="ship w-full h-[85vh] flex gap-10 justify-center items-center text-center px-6"
 		>
 			<div>
-				<motion.div
+				<Motion.div
 					initial={{
 						x: -120,
 						y: 500,
@@ -61,13 +61,13 @@ const RightSide = () => {
 					}}
 				>
 					<Linkedin />
-				</motion.div>
+				</Motion.div>
 			</div>
 
 			<div id="line" className="absolute h-15 w-1 bg-blue-400"></div>
 
 			<div>
-				<motion.div
+				<Motion.div
 					initial={{
 						x: 500,
 						y: 500,
@@ -87,7 +87,7 @@ const RightSide = () => {
 					}}
 				>
 					<Github />
-				</motion.div>
+				</Motion.div>
 			</div>
 
 			<div
@@ -96,7 +96,7 @@ const RightSide = () => {
 			></div>
 
 			<div>
-				<motion.div
+				<Motion.div
 					initial={{
 						x: -500,
 						y: 100,
@@ -116,11 +116,11 @@ const RightSide = () => {
 					}}
 				>
 					<Whatsapp />
-				</motion.div>
+				</Motion.div>
 			</div>
 
 			<div>
-				<motion.div
+				<Motion.div
 					initial={{
 						x: 500,
 						y: -250,
@@ -139,11 +139,11 @@ const RightSide = () => {
 					}}
 				>
 					<Phone />
-				</motion.div>
+				</Motion.div>
 			</div>
 
 			<div>
-				<motion.div
+				<Motion.div
 					initial={{
 						x: -350,
 						y: -500,
@@ -163,7 +163,7 @@ const RightSide = () => {
 					}}
 				>
 					<Mail />
-				</motion.div>
+				</Motion.div>
 			</div>
 		</div>
 	);

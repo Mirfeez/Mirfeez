@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-unused-vars
-import { motion } from "motion/react";
+import { motion as Motion } from "motion/react";
 import { Link } from "react-router-dom";
 import Skills from "./Skills";
 
@@ -7,7 +6,7 @@ const About = () => {
 	return (
 		<section id="aboutText" className="px-6 py-16 max-w-6xl mx-auto">
 			{/* Title */}
-			<motion.h1
+			<Motion.h1
 				id="abouth1"
 				initial={{ opacity: 0, y: -30 }}
 				whileInView={{ opacity: 1, y: 0 }}
@@ -15,7 +14,7 @@ const About = () => {
 				className="text-3xl md:text-4xl font-bold text-white mb-12 text-center max-sm:text-sm "
 			>
 				About Me
-			</motion.h1>
+			</Motion.h1>
 
 			{/* Top Section */}
 			<div id="about-topandmid">
@@ -24,7 +23,7 @@ const About = () => {
 					className="flex gap-10 items-center mb-16 justify-around"
 				>
 					{/* Left - Text */}
-					<motion.div
+					<Motion.div
 						id="about-lefttext"
 						initial={{ opacity: 0, x: -30 }}
 						whileInView={{ opacity: 1, x: 0 }}
@@ -59,7 +58,7 @@ const About = () => {
 						</p>
 
 						{/* Buttons */}
-						<motion.div
+						<Motion.div
 							initial={{
 								x: 50,
 								opacity: 0,
@@ -89,17 +88,17 @@ const About = () => {
 							>
 								Hire Me
 							</Link>
-						</motion.div>
-					</motion.div>
+						</Motion.div>
+					</Motion.div>
 
 					{/* Right - Image */}
-					<motion.div
+					<Motion.div
 						id="about-img-wrapper"
 						initial={{ opacity: 0, x: 30 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						viewport={{ once: true }}
 					>
-						<motion.img
+						<Motion.img
 							id="aboutimg"
 							initial={{ y: -200, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1 }}
@@ -113,9 +112,9 @@ const About = () => {
 							alt=""
 							className="w-60 h-60 md:w-60 md:h-60 rounded-full object-cover flex justify-self-center"
 						/>
-					</motion.div>
+					</Motion.div>
 				</div>
-				<motion.div
+				<Motion.div
 					id="about-mid"
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
@@ -128,7 +127,7 @@ const About = () => {
 						{ label: "Freelancer ", value: "Status" },
 						{ label: "Full Stack Developer", value: "Role" },
 					].map((item) => (
-						<motion.div
+						<Motion.div
 							initial={{
 								x: 30,
 								opacity: 0,
@@ -155,9 +154,9 @@ const About = () => {
 							<p id="about-status-p" className="text-zinc-400 text-sm">
 								{item.label}
 							</p>
-						</motion.div>
+						</Motion.div>
 					))}
-				</motion.div>
+				</Motion.div>
 			</div>
 
 			{/* Stats */}
@@ -167,7 +166,7 @@ const About = () => {
 			</div>
 
 			{/* Bottom CTA */}
-			<motion.div
+			<Motion.div
 				initial={{ opacity: 0, y: 20 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ once: true }}
@@ -184,7 +183,7 @@ const About = () => {
 				>
 					Let’s Work Together
 				</Link>
-			</motion.div>
+			</Motion.div>
 		</section>
 	);
 };

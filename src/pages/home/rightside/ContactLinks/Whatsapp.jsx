@@ -1,9 +1,9 @@
 import { FaWhatsapp } from "react-icons/fa";
-import { motion } from "motion/react";
+import { motion as Motion } from "motion/react";
 
 const Whatsapp = () => {
 	return (
-		<motion.div
+		<Motion.div
 			whileHover={{
 				boxShadow: "0 0 10px 5px rgba(59, 130, 246, 0.4)",
 				scale: 1.3,
@@ -18,7 +18,7 @@ const Whatsapp = () => {
 			>
 				<FaWhatsapp />
 			</a>
-		</motion.div>
+		</Motion.div>
 	);
 };
 

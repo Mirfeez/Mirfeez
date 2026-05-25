@@ -1,11 +1,9 @@
-import { useEffect, useRef, useState } from "react";
-import { motion } from "motion/react";
-import gsap from "gsap";
+import { useRef, useState } from "react";
+import { motion as Motion } from "motion/react";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
 	const formRef = useRef();
-	const [status, setStatus] = useState("");
 	const [loading, setLoading] = useState(false);
 
 	const sendEmail = (e) => {
@@ -20,30 +18,28 @@ const Contact = () => {
 			)
 			.then(() => {
 				alert("Your message sent sucessfully!");
-				setStatus("success");
 				setLoading(false);
 				formRef.current.reset();
 			})
 			.catch(() => {
 				alert("Failed to send message right now. try again!!!.");
-				setStatus("error");
 				setLoading(false);
 			});
 	};
 	return (
 		<section className="px-6 py-16 max-w-4xl mx-auto">
 			{/* Title */}
-			<motion.h1
+			<Motion.h1
 				initial={{ opacity: 0, y: -30 }}
 				animate={{ opacity: 1, y: 0 }}
 				className="text-3xl md:text-4xl font-bold text-center text-blue-400 mb-10"
 			>
 				Contact Me
-			</motion.h1>
+			</Motion.h1>
 
 			{/* Form */}
 			<div className="w-full max-w-xl mx-auto">
-				<motion.form
+				<Motion.form
 					ref={formRef}
 					onSubmit={sendEmail}
 					initial={{ opacity: 0, y: 40 }}
@@ -51,7 +47,7 @@ const Contact = () => {
 					transition={{ duration: 0.6 }}
 					className="flex flex-col gap-5 bg-zinc-900/80 backdrop-blur-lg border border-zinc-700 p-6 md:p-8 rounded-2xl shadow-xl"
 				>
-					<motion.input
+					<Motion.input
 						whileFocus={{ scale: 1.02 }}
 						className="p-3 rounded-lg bg-zinc-800 text-white outline-none border border-transparent focus:border-blue-400 transition-all"
 						type="text"
@@ -60,7 +56,7 @@ const Contact = () => {
 						placeholder="Your Name..."
 					/>
 
-					<motion.input
+					<Motion.input
 						whileFocus={{ scale: 1.02 }}
 						className="p-3 rounded-lg bg-zinc-800 text-white outline-none border border-transparent focus:border-blue-400 transition-all"
 						type="email"
@@ -69,7 +65,7 @@ const Contact = () => {
 						required
 					/>
 
-					<motion.textarea
+					<Motion.textarea
 						whileFocus={{ scale: 1.02 }}
 						className="p-3 rounded-lg bg-zinc-800 text-white outline-none border border-transparent focus:border-blue-400 transition-all resize-none"
 						name="message"
@@ -77,24 +73,24 @@ const Contact = () => {
 						placeholder="Your message..."
 					/>
 
-					<motion.button
+					<Motion.button
 						whileHover={{ scale: 1.05 }}
 						whileTap={{ scale: 0.95 }}
 						className="relative bg-blue-400 text-black font-medium py-3 rounded-lg overflow-hidden"
 					>
 						{loading ? "Sending..." : "Send Message"}
-						<motion.span
+						<Motion.span
 							className="absolute inset-0 bg-white/20"
 							initial={{ x: "-100%" }}
 							whileHover={{ x: "100%" }}
 							transition={{ duration: 0.6 }}
 						/>
-					</motion.button>
-				</motion.form>
+					</Motion.button>
+				</Motion.form>
 			</div>
 
 			{/* Social Links */}
-			<motion.div
+			<Motion.div
 				initial={{ opacity: 0, y: 30 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ delay: 0.3 }}
@@ -128,7 +124,7 @@ const Contact = () => {
 				>
 					Mail
 				</a>
-			</motion.div>
+			</Motion.div>
 		</section>
 	);
 };

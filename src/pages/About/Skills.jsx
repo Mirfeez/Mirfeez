@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 
 const Skills = () => {
 	const skillsData = [
@@ -77,7 +77,7 @@ const Skills = () => {
 			"
 		>
 			{/* Heading */}
-			<motion.div
+			<Motion.div
 				initial={{ opacity: 0, y: -30 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.6 }}
@@ -108,7 +108,7 @@ const Skills = () => {
 				>
 					Technologies and Tools that I use to build what i do.
 				</p>
-			</motion.div>
+			</Motion.div>
 
 			{/* Grid */}
 			<div
@@ -121,7 +121,7 @@ const Skills = () => {
 				"
 			>
 				{skillsData.map((category, index) => (
-					<motion.div
+					<Motion.div
 						key={index}
 						initial={{ opacity: 0, y: 40 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -145,7 +145,7 @@ const Skills = () => {
 						`}
 					>
 						{/* Category Title */}
-						<motion.h2
+						<Motion.h2
 							initial={{ opacity: 0, x: -20 }}
 							whileInView={{ opacity: 1, x: 0 }}
 							transition={{
@@ -161,12 +161,12 @@ const Skills = () => {
 							`}
 						>
 							{category.title}
-						</motion.h2>
+						</Motion.h2>
 
 						{/* Skills */}
 						<div className="flex flex-wrap gap-2">
 							{category.skills.map((skill, idx) => (
-								<motion.span
+								<Motion.span
 									key={idx}
 									initial={{ opacity: 0, scale: 0, x: 100 }}
 									whileInView={{
@@ -194,10 +194,10 @@ const Skills = () => {
 									`}
 								>
 									{skill}
-								</motion.span>
+								</Motion.span>
 							))}
 						</div>
-					</motion.div>
+					</Motion.div>
 				))}
 			</div>
 		</section>

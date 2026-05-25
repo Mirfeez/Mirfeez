@@ -1,9 +1,9 @@
 import { FaPhone } from "react-icons/fa";
-import { motion } from "motion/react";
+import { motion as Motion } from "motion/react";
 
 const Phone = () => {
 	return (
-		<motion.div
+		<Motion.div
 			whileHover={{
 				boxShadow: "0 0 10px 5px rgba(59, 130, 246, 0.4)",
 				scale: 1.3,
@@ -16,7 +16,7 @@ const Phone = () => {
 			<a target="_blank" href="tel:+916360836891">
 				<FaPhone />
 			</a>
-		</motion.div>
+		</Motion.div>
 	);
 };
 

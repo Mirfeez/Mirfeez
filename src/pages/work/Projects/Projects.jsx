@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "motion/react";
+import { motion as Motion } from "motion/react";
 
 import portfolio1 from "./projects-img/portfolio-1.png";
 import portfolio2 from "./projects-img/portfolio-2.png";
@@ -95,7 +95,7 @@ const Projects = () => {
 			className="w-full min-h-screen px-4 sm:px-6 lg:px-10 py-16 max-w-7xl mx-auto"
 		>
 			{/* Title */}
-			<motion.h1
+			<Motion.h1
 				initial={{ opacity: 0, y: -40 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.6 }}
@@ -110,13 +110,13 @@ const Projects = () => {
 				"
 			>
 				My Projects
-			</motion.h1>
+			</Motion.h1>
 
 			{/* Categories */}
 			{Object.entries(groupedProjects).map(([category, projects]) => (
 				<div key={category} className="mb-20">
 					{/* Category Heading */}
-					<motion.h2
+					<Motion.h2
 						initial={{ opacity: 0, y: -40 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.5 }}
@@ -133,7 +133,7 @@ const Projects = () => {
 						"
 					>
 						{category}
-					</motion.h2>
+					</Motion.h2>
 
 					{/* Cards */}
 					<div
@@ -146,7 +146,7 @@ const Projects = () => {
 						"
 					>
 						{projects.map((project, idx) => (
-							<motion.div
+							<Motion.div
 								key={idx}
 								initial={{ opacity: 0, y: 40 }}
 								whileInView={{ opacity: 1, y: 0 }}
@@ -172,7 +172,7 @@ const Projects = () => {
 							>
 								{/* Image */}
 								<div className="overflow-hidden">
-									<motion.img
+									<Motion.img
 										initial={{
 											opacity: 0,
 										}}
@@ -251,7 +251,7 @@ const Projects = () => {
 										View Project
 									</a>
 								</div>
-							</motion.div>
+							</Motion.div>
 						))}
 					</div>
 				</div>

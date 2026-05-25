@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { motion, stagger } from "motion/react";
+import { motion as Motion } from "motion/react";
 
 const Navlinks = () => {
 	const [open, setOpen] = useState(false);
@@ -17,14 +17,14 @@ const Navlinks = () => {
 	];
 	return (
 		<>
-			<motion.nav className="hidden md:flex gap-4 font-medium">
+			<Motion.nav className="hidden md:flex gap-4 font-medium">
 				{navLinks.map((link, i) => (
 					<NavLink key={i} to={link.path} className={navClass}>
 						{link.name}
 					</NavLink>
 				))}
-			</motion.nav>
-			<motion.button
+			</Motion.nav>
+			<Motion.button
 				animate={{
 					rotate: open ? 360 : 0,
 					x: open ? -47 : 0, // move slightly left
@@ -66,10 +66,10 @@ const Navlinks = () => {
 						/>
 					</svg>
 				)}
-			</motion.button>
+			</Motion.button>
 
 			{open && (
-				<motion.div
+				<Motion.div
 					initial={{
 						x: 100,
 						opacity: 0,
@@ -86,7 +86,7 @@ const Navlinks = () => {
 							{link.name}
 						</NavLink>
 					))}
-				</motion.div>
+				</Motion.div>
 			)}
 		</>
 	);

@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion as Motion } from "motion/react";
 import { ServicesData } from "./ServicesData";
 import ServiceCard from "./ServiceCard";
 
@@ -6,7 +6,7 @@ const Services = () => {
 	return (
 		<section className="px-6 py-16 max-w-7xl mx-auto">
 			{/* Main Heading */}
-			<motion.h1
+			<Motion.h1
 				initial={{ opacity: 0, y: -40 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.6 }}
@@ -21,11 +21,11 @@ const Services = () => {
 				"
 			>
 				My Services
-			</motion.h1>
+			</Motion.h1>
 
 			{/* Categories */}
 			{ServicesData.map((section, i) => (
-				<motion.div
+				<Motion.div
 					key={i}
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ const Services = () => {
 					className="mb-20"
 				>
 					{/* Category Title */}
-					<motion.h2
+					<Motion.h2
 						initial={{ opacity: 0, x: -40 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.5 }}
@@ -51,7 +51,7 @@ const Services = () => {
 						"
 					>
 						{section.category}
-					</motion.h2>
+					</Motion.h2>
 
 					{/* Cards */}
 					<div
@@ -64,7 +64,7 @@ const Services = () => {
 						"
 					>
 						{section.items.map((item, idx) => (
-							<motion.div
+							<Motion.div
 								key={idx}
 								initial={{ opacity: 0, y: 40 }}
 								whileInView={{ opacity: 1, y: 0 }}
@@ -79,10 +79,10 @@ const Services = () => {
 									title={item.title}
 									desc={item.desc}
 								/>
-							</motion.div>
+							</Motion.div>
 						))}
 					</div>
-				</motion.div>
+				</Motion.div>
 			))}
 		</section>
 	);

@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from 'motion/react';
+import { motion as Motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { HashLink } from "react-router-hash-link";
 
@@ -9,7 +9,7 @@ const LeftSide = () => {
 		<div className=" text-gray-300 ">
 			{/* HERO */}
 			<section className="flex flex-col justify-center items-center text-center px-6">
-				<motion.h1
+				<Motion.h1
 					animate={{
 						y: 0,
 						opacity: 1,
@@ -25,9 +25,9 @@ const LeftSide = () => {
 					className="text-4xl md:text-6xl font-bold mb-4"
 				>
 					Hi, I’m <span className="text-blue-400">Mirfeez</span> 👋
-				</motion.h1>
+				</Motion.h1>
 
-				<motion.h2
+				<Motion.h2
 					initial={{
 						y: -50,
 						opacity: 0,
@@ -44,9 +44,9 @@ const LeftSide = () => {
 				>
 					Full Stack Developer, Digital Product & Advanced Excel Dashboard
 					Creator
-				</motion.h2>
+				</Motion.h2>
 
-				<motion.p
+				<Motion.p
 					initial={{
 						y: -50,
 						opacity: 0,
@@ -64,7 +64,7 @@ const LeftSide = () => {
 					I build modern, responsive web applications, design business
 					assets, and create powerful dashboards that help people track and
 					improve their life.
-				</motion.p>
+				</Motion.p>
 
 				<div className="flex gap-4">
 					<Link to='/works' className="px-6 py-3 bg-blue-400 text-black rounded-lg font-bold hover:bg-black transition hover:text-blue-400 hover:border-2 hover:border-blue-400 hover:shadow-md hover:shadow-blue-400">

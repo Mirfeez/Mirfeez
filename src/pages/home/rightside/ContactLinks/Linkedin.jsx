@@ -1,9 +1,9 @@
 import { FaLinkedinIn } from "react-icons/fa";
-import { motion } from "motion/react";
+import { motion as Motion } from "motion/react";
 
 const Linkedin = () => {
 	return (
-		<motion.div
+		<Motion.div
 			whileHover={{
 				scale: 1.3,
 				boxShadow: "0 0 10px 5px rgba(59, 130, 246, 0.4)",
@@ -18,7 +18,7 @@ const Linkedin = () => {
 			>
 				<FaLinkedinIn />
 			</a>
-		</motion.div>
+		</Motion.div>
 	);
 };
 

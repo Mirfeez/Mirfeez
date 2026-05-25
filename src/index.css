@@ -1,12 +1,5 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: Name;
-  src: url(./assets/name.ttf);
-}
-
-
-
 body {
   background-color: rgb(21, 21, 21);
   color: white;
