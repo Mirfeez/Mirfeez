@@ -29,7 +29,7 @@ const Projects = () => {
 			info: "A portfolio website exploring React, TailwindCSS, GSAP & Framer Motion.",
 		},
 		{
-			title: "Age Difference Checker",
+			title: "Age Difference Tester",
 			category: "Utility Projects",
 			img: difference,
 			client: "Utility Project",

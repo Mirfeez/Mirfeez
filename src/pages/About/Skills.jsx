@@ -59,6 +59,7 @@ const Skills = () => {
 				"Canva",
 				"Advanced Excel",
 				"Dashboard Creation",
+				"Python"
 			],
 		},
 	];

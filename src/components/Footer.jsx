@@ -1,6 +1,7 @@
 import { FaLocationDot, FaSquarePhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
+import Logo from './Navbar/Logo';
 
 const Footer = () => {
 	return (
@@ -9,7 +10,7 @@ const Footer = () => {
 				{/* Left */}
 				<div>
 					<h1 className="text-2xl font-bold text-blue-400 mb-2">
-						&lt;Mirfeez /&gt;
+						<Logo />
 					</h1>
 					<p>Full Stack Developer.</p>
 					<p className="text-sm text-gray-400">
