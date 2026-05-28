@@ -12,10 +12,9 @@ const Footer = () => {
 					<h1 className="text-2xl font-bold text-blue-400 mb-2">
 						<Logo />
 					</h1>
-					<p>Full Stack Developer.</p>
+					<p>Digital Product.</p>
 					<p className="text-sm text-gray-400">
-						Open to freelance & full-time opportunities. Let’s build
-						something amazing together
+						Just for fun
 					</p>
 					<div className="m-2 flex hover:text-white pointer">
 						<span className="m-1">
