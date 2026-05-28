@@ -139,7 +139,7 @@ const Projects = () => {
 					<div
 						className="
 							grid
-							grid-cols-1
+							grid-cols-2
 							sm:grid-cols-2
 							lg:grid-cols-3
 							gap-8
@@ -160,14 +160,16 @@ const Projects = () => {
 									bg-zinc-900
 									border
 									border-zinc-800
-									rounded-2xl
+									rounded-xl
 									overflow-hidden
-									shadow-lg
+									shadow-md
 									hover:border-blue-400
 									transition-all
 									duration-300
 									flex
 									flex-col
+									max-w-[320px]
+									mx-auto
 								"
 							>
 								{/* Image */}
@@ -190,7 +192,7 @@ const Projects = () => {
 										alt={project.title}
 										className="
 											w-full
-											h-52
+											lg:h-40
 											object-cover
 											hover:scale-105
 											transition-transform
@@ -200,19 +202,19 @@ const Projects = () => {
 								</div>
 
 								{/* Content */}
-								<div className="p-5 flex flex-col flex-1">
+								<div className="p-4 flex flex-col flex-1">
 									<h3
 										className="
-											text-xl
+											text-lg
 											font-semibold
 											text-white
-											mb-2
+											mb-1
 										"
 									>
 										{project.title}
 									</h3>
 
-									<p className="text-blue-400 text-sm mb-3">
+									<p className="text-blue-400 text-xs mb-2">
 										{project.client}
 									</p>
 
@@ -233,14 +235,15 @@ const Projects = () => {
 										target="_blank"
 										rel="noopener noreferrer"
 										className="
-											mt-6
+											mt-4
 											inline-flex
 											items-center
 											justify-center
-											px-5
-											py-3
-											rounded-xl
+											px-4
+											py-2
+											rounded-lg
 											bg-blue-500
+											text-sm
 											text-black
 											font-semibold
 											hover:bg-blue-400
